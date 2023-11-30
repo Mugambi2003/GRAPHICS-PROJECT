@@ -1,7 +1,8 @@
 import taichi as ti
 from vector import *
 import math
-
+ 
+ 
 
 @ti.data_oriented
 class Camera:
