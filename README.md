@@ -1,31 +1,35 @@
-# Ray Tracing Implementation on a Sphere - Python
+# Multi-Object Ray Tracing
 
 ## About
-This project explores the implementation of ray tracing techniques on a sphere. Leveraging principles of computer graphics, the application simulates the interaction of light rays with a spherical object, resulting in visually engaging renderings.
+This project explores the implementation of ray tracing techniques on multiple objects. Leveraging principles of computer graphics, the application simulates the interaction of light rays with spherical objects, resulting in visually engaging renderings.
 
 ## Features
 
-- Basic ray tracing on a sphere.
+- Basic ray tracing on different objects.
 - Interactive visualization with Matplotlib.
 - Integration with specialized ray tracing and shadow libraries.
 
 ## Slides
 The slides to this pitch are found [here](https://docs.google.com/presentation/d/1ZuZmtv1VgM7WAw3jpSI1SzLcU6sBZ3JmEe-7uF9YMdM/edit?usp=sharing).
 
+## Demo
+| Dashboard                                                                             | Cube                                                                             | Sphere                                                                             |
+|---------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
+| ![Dashboard](C:\Users\Jerome\PycharmProjects\compGraphicsMiniProject\assets\Pic1.png) | ![Cube](C:\Users\Jerome\PycharmProjects\compGraphicsMiniProject\assets\Pic2.png) | ![Sphere](C:\Users\Jerome\PycharmProjects\compGraphicsMiniProject\assets\Pic3.png) |
+
+
 ## Directory Structure
 
 - `src`: Contains the source code.
 - `tests`: Houses unit tests.
 - `assets`: Stores assets such as textures or models.
-- `docs`: Documentation files.
 
 ## Dependencies
 
 - Python (>=3.x)
 - [NumPy](https://numpy.org/): For numerical computations.
 - [Matplotlib](https://matplotlib.org/): For data visualization.
-- [Raytracing](https://your-raytracing-library-url/): The ray tracing library.
-- [Shadow3](https://your-shadow3-library-url/): Additional library for shadow effects.
+- [Taichi](https://pypi.org/project/taichi/): For high-performance numerical computation
 
 ## Local Deployment
 
@@ -36,7 +40,7 @@ git clone https://github.com/Mugambi2003/GRAPHICS-PROJECT.git`
 
 ### Step 2: Navigate to the project directory
 ```bash
-cd ray-tracing
+cd python_ray_tracing
 ```
 
 ### Step 3: Install dependencies
