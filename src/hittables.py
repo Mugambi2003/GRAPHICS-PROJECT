@@ -67,6 +67,7 @@ LEAF = 0.0
 @ti.data_oriented
 class World:
     def __init__(self):
+        self.sky_material = None
         self.spheres = []
 
     def add(self, sphere):
@@ -95,6 +96,9 @@ class World:
 
     def bounding_box(self, i):
         return self.bvh_min(i), self.bvh_max(i)
+
+    def set_sky_material(self, mat_sky):
+        self.sky_material = mat_sky
 
     @ti.func
     def hit_all(self, ray_origin, ray_direction):

@@ -12,6 +12,12 @@ This project explores the implementation of ray tracing techniques on multiple o
 ## Slides
 The slides to this pitch are found [here](https://docs.google.com/presentation/d/1ZuZmtv1VgM7WAw3jpSI1SzLcU6sBZ3JmEe-7uF9YMdM/edit?usp=sharing).
 
+## Demo
+| Dashboard                                                                             | Cube                                                                             | Sphere                                                                             |
+|---------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
+| ![Dashboard](C:\Users\Jerome\PycharmProjects\compGraphicsMiniProject\assets\Pic1.png) | ![Cube](C:\Users\Jerome\PycharmProjects\compGraphicsMiniProject\assets\Pic2.png) | ![Sphere](C:\Users\Jerome\PycharmProjects\compGraphicsMiniProject\assets\Pic3.png) |
+
+
 ## Directory Structure
 
 - `src`: Contains the source code.

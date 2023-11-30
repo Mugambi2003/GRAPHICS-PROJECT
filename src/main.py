@@ -7,6 +7,7 @@ from cam import Camera
 from material import *
 import math
 import random
+from gui_screen import App
 
 _OUTPUTFILE = "assets/"
 
@@ -79,17 +80,6 @@ if __name__ == '__main__':
     world.add(Sphere([4.0, 1.0, 0.0], 1.0, mat3))  # Opaque
     world.commit()
 
-    # camera
-    v_from = Point(13.0, 2.0, 3.0)
-    at = Point(0.0, 0.0, 0.0)
-    up = Vector(0.0, 1.0, 0.0)
-    focus_dist = 10.0
-    aperture = 0.1
-    cam = Camera(v_from, at, up, 20.0, aspect_ratio, aperture, focus_dist)
-
-    start_attenuation = Vector(1.0, 1.0, 1.0)
-    initial = True
-
 
     @ti.kernel
     def finish():
@@ -157,13 +147,31 @@ if __name__ == '__main__':
 
     num_pixels = image_width * image_height
 
-    t = time()
-    print("Image is Rendering...")
-    wavefront_initial()
-    num_completed = 0
-    while num_completed < num_pixels:
-        num_completed += wavefront_big()
-
-    finish()
-    print(f"Time taken to Complete the Image:", time() - t)
-    ti.tools.image.imwrite(pixels.to_numpy(), f"{_OUTPUTFILE}World.png")
+    # camera setup
+    # focus_dist1 = 10.0
+    # aperture = 0.1
+    # position1 = Point(2.0, 4.0, 18.0)
+    # at = Point(0.0, 0.0, 0.0)
+    # up = Vector(0.0, 1.0, 0.0)
+    # start_attenuation = Vector(1.0, 1.0, 1.0)
+    # cam = Camera(position1, at, up, 20.0, aspect_ratio, aperture, focus_dist1)
+    # initial = True
+    #
+    # t = time()
+    # print(f"Rendering Image 1...")
+    # wavefront_initial()
+    # num_completed = 0
+    # while num_completed < num_pixels:
+    #     num_completed += wavefront_big()
+    #
+    # finish()
+    #
+    # # Create a separate array for each image
+    # image_array = pixels.to_numpy().copy()
+    #
+    # print(f"Time taken to Complete Image 1:", time() - t)
+    # ti.tools.image.imwrite(image_array, f"{_OUTPUTFILE}World_2.png")
+    #
+    print("Launching GUI...", flush=True)
+    app = App()
+    app.mainloop()
