@@ -8,6 +8,7 @@ This project explores the implementation of ray tracing techniques on multiple o
 - Basic ray tracing on different objects.
 - Interactive visualization with Matplotlib.
 - Integration with specialized ray tracing and shadow libraries.
+- Added GUI for better viewing.
 
 ## Slides
 The slides to this pitch are found [here](https://docs.google.com/presentation/d/1ZuZmtv1VgM7WAw3jpSI1SzLcU6sBZ3JmEe-7uF9YMdM/edit?usp=sharing).
@@ -15,7 +16,7 @@ The slides to this pitch are found [here](https://docs.google.com/presentation/d
 ## Demo
 | Dashboard                                                                             | Cube                                                                             | Sphere                                                                             |
 |---------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| ![Dashboard](C:\Users\Jerome\PycharmProjects\compGraphicsMiniProject\assets\Pic1.png) | ![Cube](C:\Users\Jerome\PycharmProjects\compGraphicsMiniProject\assets\Pic2.png) | ![Sphere](C:\Users\Jerome\PycharmProjects\compGraphicsMiniProject\assets\Pic3.png) |
+| ![Dashboard](assets/Pic1.png) | ![Cube](assets/Pic2.png) | ![Sphere](assets/Pic3.png) |
 
 
 ## Directory Structure
